@@ -9,7 +9,7 @@ if [[ " ${COMP_NAME[*]} " =~ " ${COMPname} " ]]; then
 fi
 
 if [[ ! " ${COMP_NAME[*]} " =~ " ${COMPname} " ]]; then
-    echo " invalid component: blehh"
+    echo " invalid component: "
 
    read -p "Try again: " COMPname
    
@@ -21,7 +21,7 @@ read -p "Enter View option: " View
 fi
 
 if [[ ! " ${VIEW_OPTION[*]} " =~ " ${View} " ]]; then
-    echo " invalid component: blehh"
+    echo " invalid component: "
      read -p "Try again: " View
 
 fi
@@ -32,7 +32,7 @@ if [[ "${SCALE_MEASURE[*]}" == *"$Scale"* ]]; then
 echo "$Scale"
 break
 else
-echo "bleh-invalid scale measure"  
+echo "invalid scale measure"  
 fi
 done
 
@@ -42,7 +42,7 @@ if [[ "${COUNT_NUMBER[*]}" == *"$Count"* ]]; then
 echo "$Count"
 break
 else
-echo "bleh-invalid count name"  
+echo "invalid count name"  
 fi
 done
 
