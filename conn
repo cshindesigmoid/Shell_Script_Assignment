@@ -46,7 +46,6 @@ echo "bleh-invalid count name"
 fi
 done
 
-
 #alter the file line
 if [ "$View" == "AUCTION" ]; then
 if cat sig.conf | grep -n -v "vdopiasample-bid" | grep -n -q "$COMPname" ; then
@@ -65,7 +64,6 @@ fi
 
 else
 if cat sig.conf | grep -n  "vdopiasample-bid" | grep -n -q "$COMPname " ; then
-
 A=$( cat sig.conf | grep -n   "vdopiasample-bid" | grep  "$COMPname" | awk  -F ':' '{print $1}')
 B=$( cat sig.conf | grep -n   "vdopiasample-bid" | grep  "$COMPname" | awk  -F ';' '{print $2}')
 C=$( cat sig.confi | grep -n   "vdopiasample-bid" | grep   "$COMPname" | awk  -F '=' '{print $2}')
@@ -77,6 +75,5 @@ else
 echo "not matched"
 fi
 fi
-
 
 cat sig.conf
